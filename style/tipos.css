@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/*Quitar en caso de*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    
+}
+
+.titulo{
+    color: aliceblue;
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.sub{
+    font-size: 30px;
+}
+p{
+    color: aliceblue;
+    margin-bottom: 40px;
+    font-size: 18px;
+    margin: auto;
+}
+
+.container{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau{
+    padding: 100px;
+    background: #171717;
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.contenido .container{
+    height: 35rem;
+    width: 35rem;
+    background: #424141;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+}
+
+.contenido .container i{
+    height: auto;
+    width: auto;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: darkviolet;
+    font-size: 2rem;
+    margin: 1rem 0;
+    
+}
+
+.contenido .container h3{
+    font-size: 20px;
+    color: aliceblue;
+
+}
+
+.contenido .container p{
+    font-size: 15px;
+    padding: 0 15px;
+    margin: auto;
+    justify-content:initial;
+}
+
+.contenido .container img{
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+/*menú*/
+body{
+    background-color: #ffffff;
+}
+
+/* Estilos para el ícono del Menú */
+.icono-menu{
+    margin: 40px 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.icono-menu img{
+    vertical-align: top;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor del Menú */
+.cont-menu{
+    background-color: rgb(121, 28, 193);
+    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+
+/* Estilos por agregar en JavaScript */
+.active{
+    transform: translate(-600px);
+}
+
+/* Estilos para el listado del Menú */
+.cont-menu ul{
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.cont-menu ul li{
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.cont-menu ul li:hover{
+    background-color: rgb(228,228,228);
+    color: rgb(42, 42, 42);
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}

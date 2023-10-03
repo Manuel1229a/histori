@@ -1,0 +1,359 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.25em;
+}
+ul{
+    list-style: none;
+}
+
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color: blueviolet;
+}
+header{
+    background-color: rgb(255, 255, 255);
+
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 5em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: #ffffff;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url("../img/atardecer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+
+#idea .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+#ciencia{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#ciencia .container{
+    padding: 150px 12px;
+}
+
+#ciencia .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+#ciencia h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#ciencia p{
+    display: none;
+
+}
+
+
+.carta:first-child{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url("../img/atardecer.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url("../img/atardecer.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url("../img/atardecer.jpg");
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url("../img/atardecer.jpg");
+}
+
+.carta:nth-child(5){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url("../img/atardecer.jpg");
+}
+
+
+
+
+/*Características*/
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+@media (min-width: 850px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-between; /*Quitar en caso de*/
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #inicio .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #inicio .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    
+    #inicio h2{
+        margin-top: 0;
+    }
+
+    #inicio .img-inicio{
+        background-image: url("../img/Captura\ de\ pantalla\ \(71\).png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        margin: 25px;
+    }
+
+    #idea .container {
+        background: linear-gradient(to bottom right, blue, rgb(204, 11, 198));
+    }
+    #idea .img2{
+        background-image: url("../img/mount2.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 600px;
+        margin: 30px;
+    }
+
+    #idea h2{
+        margin-top: 0;
+    }
+    #idea .texto2{
+        color: #ffffff;
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+
+    }
+    
+
+    /*Secciones*/
+    #ciencia .secciones{
+        display: flex;
+        justify-content: center;
+    }
+
+    #ciencia p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #ciencia h2{
+        font-size: 4em;
+    }
+    #ciencia h3{
+        margin-top: 0;
+        justify-content: center center;
+        height: 100px;
+    }   
+
+    #ciencia .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50,50,50,1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url("../img/atardecer.jpg");
+    }
+    
+    .carta:nth-child(2){
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url("../img/atardecer.jpg");
+    }
+    
+    .carta:nth-child(3){
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url("../img/atardecer.jpg");
+    }
+    
+    .carta:nth-child(4){
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url("../img/atardecer.jpg");
+    }
+    
+    .carta:nth-child(5){
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url("../img/atardecer.jpg");
+    }
+    
+   
+
+    #caracteristicas{
+        background-image: url();
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    @media (min-width: 1100px){
+        #caracteristicas{
+            background-position-x: calc(100vw - 800px);
+        }
+    }
+}
+
+
+/*menú*/
+body{
+    background-color: #ffffff;
+}
+
+/* Estilos para el ícono del Menú */
+.icono-menu{
+    margin: 40px 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.icono-menu img{
+    vertical-align: top;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor del Menú */
+.cont-menu{
+    background-color: rgb(121, 28, 193);
+    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+
+/* Estilos por agregar en JavaScript */
+.active{
+    transform: translate(-600px);
+}
+
+/* Estilos para el listado del Menú */
+.cont-menu ul{
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.cont-menu ul li{
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.cont-menu ul li:hover{
+    background-color: rgb(228,228,228);
+    color: rgb(42,42,42);
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
